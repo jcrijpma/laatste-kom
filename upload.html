@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Categorization and Linking</title>
+    <link rel="stylesheet" href="upload-styles.css"> <!-- Ensure this path is correct -->
+</head>
+<body>
+    <div class="form-container">
+        <h2>Document Upload and Categorization for GIS/SharePoint</h2>
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            
+            <!-- Document name and project info -->
+            <label for="document-name">Document Name:</label>
+            <input type="text" id="document-name" name="document-name" required><br><br>
+
+            <label for="project-name">Project Name:</label>
+            <input type="text" id="project-name" name="project-name" required><br><br>
+
+            <label for="project-type">Project Type:</label>
+            <select id="project-type" name="project-type" required>
+                <option value="infrastructure">Infrastructure</option>
+                <option value="residential">Residential</option>
+                <option value="commercial">Commercial</option>
+            </select><br><br>
+
+            <!-- Project phase and knowledge category -->
+            <label for="project-phase">Project Phase:</label>
+            <select id="project-phase" name="project-phase" required>
+                <option value="planning">Planning</option>
+                <option value="execution">Execution</option>
+                <option value="completion">Completion</option>
+            </select><br><br>
+
+            <label for="knowledge-category">Knowledge Category:</label>
+            <select id="knowledge-category" name="knowledge-category" required>
+                <option value="risk-management">Risk Management</option>
+                <option value="stakeholder-communication">Stakeholder Communication</option>
+                <option value="technical-issues">Technical Issues</option>
+            </select><br><br>
+
+            <!-- Geographic location (GIS) -->
+            <label for="geolocation">Geographic Location (GIS Coordinates):</label>
+            <input type="text" id="geolocation" name="geolocation" placeholder="Add GIS coordinates" required><br><br>
+
+            <!-- Other document information -->
+            <label for="key-lesson">Key Lesson:</label>
+            <textarea id="key-lesson" name="key-lesson" required></textarea><br><br>
+
+            <label for="contributing-department">Contributing Department(s):</label>
+            <input type="text" id="contributing-department" name="contributing-department" required><br><br>
+
+            <label for="date-occurrence">Date of Occurrence:</label>
+            <input type="date" id="date-occurrence" name="date-occurrence" required><br><br>
+
+            <label for="tender-process">Related Tender Process:</label>
+            <input type="text" id="tender-process" name="tender-process" required><br><br>
+
+            <label for="impact-level">Impact Level:</label>
+            <select id="impact-level" name="impact-level" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select><br><br>
+
+            <label for="action-taken">Action Taken:</label>
+            <textarea id="action-taken" name="action-taken" required></textarea><br><br>
+
+            <!-- Upload and linking to systems like SharePoint -->
+            <label for="related-documents">Related Documents (Link to SharePoint):</label>
+            <input type="file" id="related-documents" name="related-documents" accept=".pdf, .doc, .docx, .xls, .xlsx, .txt"><br><br>
+
+            <!-- URL linking to SharePoint (can also visualize GIS points) -->
+            <label for="sharepoint-url">SharePoint/Document URL:</label>
+            <input type="url" id="sharepoint-url" name="sharepoint-url" placeholder="Add the document URL if relevant"><br><br>
+
+            <!-- Tags for searchability -->
+            <label for="tags">Tags/Keywords:</label>
+            <input type="text" id="tags" name="tags" placeholder="Add keywords for easy search" required><br><br>
+
+            <label for="responsible-party">Responsible Party:</label>
+            <input type="text" id="responsible-party" name="responsible-party" required><br><br>
+
+            <label for="confidentiality-level">Confidentiality Level:</label>
+            <select id="confidentiality-level" name="confidentiality-level" required>
+                <option value="public">Public</option>
+                <option value="confidential">Confidential</option>
+            </select><br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit Document">
+        </form>
+    </div>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
